@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: lotus-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn main:app
+    envVars:
+      - key: DATABASE_PATH
+        value: /var/data/lotus_academy.db
