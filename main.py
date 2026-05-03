@@ -1040,7 +1040,7 @@ def export_database():
 
 # ─── ENTRY POINT ─────────────────────────────────────────
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
+    port = int(os.environ.get("PORT", 8080))
     host = os.environ.get("HOST", "0.0.0.0")
     
     print("\n" + "="*60)
